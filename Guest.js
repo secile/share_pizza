@@ -31,13 +31,13 @@ class Guest {
         // 座標。
         this.posX = this.canvas.width / 2;
         this.posY = this.canvas.height / 2;
-        this.width = this.canvas.width / 8;
-        this.height = this.canvas.width / 8;
+        this.width = game.getScreenLongSize() / 8;
+        this.height = game.getScreenLongSize() / 8;
         this.hotRect = { x: 0, y: 0, width: 0, height: 0 };
 
         // 表示。
         this.fontName = `Candara`;
-        this.fontSize = this.canvas.width / 20;
+        this.fontSize = game.getScreenLongSize() / 20;
         this.fontFillStyle = "white";
         this.fontStrokeStyle = "black";
         this.textAlign = 'start';

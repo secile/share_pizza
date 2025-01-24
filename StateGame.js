@@ -9,10 +9,11 @@ class StateGame {
     init() {
         console.log("StateGame init");
         this.text = this.Game.getSprite(this.Game.SpriteKind.Text);
+        this.text.fontSize = this.Game.getScreenShortSize() / 20; // ここだけ変える。あとで戻す。
         this.text.setText(this.Game.getText(this.Game.lang.TextKind.CutPizza, this.Game.guestSum)); // ピザ🍕を${this.Game.guestSum}個にカットしてください！
 
         this.mesg = new Text(this.Game);
-        this.mesg.fontSize = this.Game.canvas.width / 40;
+        this.mesg.fontSize = this.Game.getScreenShortSize() / 25;
         this.mesg.textAlign = 'center';
         this.mesg.textBaseline = 'middle';
         this.mesg.fontFillStyle = 'Violet';
@@ -22,7 +23,7 @@ class StateGame {
         this.Game.addSprite(this.mesg);
 
         this.cbtn = new Text(this.Game);
-        this.cbtn.fontSize = this.Game.canvas.width / 40;
+        this.cbtn.fontSize = this.Game.getScreenShortSize() / 20;
         this.cbtn.textAlign = 'center';
         this.cbtn.textBaseline = 'middle';
         this.cbtn.fontFillStyle = 'Violet';
@@ -56,7 +57,7 @@ class StateGame {
 
     exit() {
         console.log("StateGame exit");
-
+        
         this.Game.removeSprite(this.mesg);
         this.Game.removeSprite(this.cbtn);
 

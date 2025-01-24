@@ -30,7 +30,7 @@ class Language {
             case this.TextKind.Title: return "Share Pizza🍕 with You.";
             case this.TextKind.ClickHere: return "Click Here.";
             case this.TextKind.CutPizza: return `Cut the Pizza🍕 into ${args[0]} pieces!`;
-            case this.TextKind.CutGuide: return "drag over the pizza to change size, and push 'CUT' button.";
+            case this.TextKind.CutGuide: return "resize the pizza, and push 'CUT' button.";
             case this.TextKind.CutButton: return "✂️ CUT ✂️";
             case this.TextKind.Perfect: return "✨Perfect✨";
             case this.TextKind.Result: return "🎉Final Result🎉";
@@ -45,7 +45,7 @@ class Language {
             case this.TextKind.Title: return "あなたと ピザ🍕を";
             case this.TextKind.ClickHere: return "クリックで次へ";
             case this.TextKind.CutPizza: return `ピザ🍕を${args[0]}個にカットしてください！`;
-            case this.TextKind.CutGuide: return "ピザをマウスクリックでサイズを決めて、「カット」ボタンをおしてね。";
+            case this.TextKind.CutGuide: return "ピザのサイズを決めてカットボタンをおしてね。";
             case this.TextKind.CutButton: return "✂️ カット ✂️";
             case this.TextKind.Perfect: return "✨Perfect✨";
             case this.TextKind.Result: return "🎉結果発表🎉";

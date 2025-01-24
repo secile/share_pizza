@@ -151,6 +151,7 @@ class StateJudge2 {
         this.Game.removeSpriteAll(this.Game.SpriteKind.Gomibako); // ゴミ箱を消す。
 
         const text = this.Game.getSprite(this.Game.SpriteKind.Text);
+        text.fontSize = this.Game.getScreenLongSize() / 20;; // 戻す。
         text.setText("");
 
         // Guestの顔を変える。

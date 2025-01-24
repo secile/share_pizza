@@ -16,8 +16,8 @@ class Pizza {
         // 座標。
         this.posX = this.canvas.width / 2;
         this.posY = this.canvas.height / 2;
-        this.width = this.canvas.width / 8;
-        this.height = this.canvas.width / 8;
+        this.width = game.getScreenLongSize() / 8;
+        this.height = game.getScreenLongSize() / 8;
         this.hotRect = { x: this.posX-this.width, y: this.posY-this.height, width: this.width*2, height: this.height*2 };
 
         // 表示。

@@ -23,7 +23,7 @@ class Text {
         // 表示。
         this.Text = "";
         this.fontName = `Candara`;
-        this.fontSize = this.canvas.width / 20;
+        this.fontSize =  game.getScreenLongSize() / 20;
         this.fontFillStyle = "white";
         this.fontStrokeStyle = "black";
         this.textAlign = 'start';

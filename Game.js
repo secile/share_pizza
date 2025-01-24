@@ -124,6 +124,22 @@ class Game {
         this.Sprites = this.Sprites.filter(x => x != sprite);
     }
 
+    // スクリーンの向きのうち、長い方を取得する。
+    getScreenLongSize() {
+        if (this.canvas.width > this.canvas.height) {
+            return this.canvas.width;
+        } else {
+            return this.canvas.height;
+        }
+    }
+    getScreenShortSize() {
+        if (this.canvas.width > this.canvas.height) {
+            return this.canvas.height;
+        } else {
+            return this.canvas.width;
+        }
+    }
+
     // Stateを遷移させる。
     setState(state) {
         this.NextState = state;
