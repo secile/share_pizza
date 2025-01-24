@@ -64,8 +64,10 @@ class Controller {
             console.log(e.offsetX, e.offsetY);
         })
 
-        window.addEventListener('pointerdown', () => {
+        window.addEventListener('pointerdown', e => {
             this.mousedown = true;
+            this.mouse.x = e.offsetX;
+            this.mouse.y = e.offsetY;
         })
 
         window.addEventListener('pointerup', () => {
