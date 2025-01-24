@@ -36,6 +36,13 @@ window.addEventListener('resize', () => {
     //init();
 })
 
+// iOSではユーザーイベントのコールバックで一度でも音を鳴らさないと音がならない。
+const se_dummy = new Audio('./Sound/決定ボタンを押す50.mp3');
+window.addEventListener("touchend", () =>
+{
+    se_dummy.play();
+}, {once: true});
+
 // 初期化。
 init();
 
