@@ -23,7 +23,7 @@ class StateGame {
         this.Game.addSprite(this.mesg);
 
         this.cbtn = new Text(this.Game);
-        this.cbtn.fontSize = this.Game.getScreenLongSize() / 25;
+        this.cbtn.fontSize = this.Game.getScreenLongSize() / 20;
         this.cbtn.textAlign = 'center';
         this.cbtn.textBaseline = 'middle';
         this.cbtn.fontFillStyle = 'Violet';

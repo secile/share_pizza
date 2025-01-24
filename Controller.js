@@ -61,13 +61,13 @@ class Controller {
         window.addEventListener('pointermove', e => {
             this.mouse.x = e.offsetX;
             this.mouse.y = e.offsetY;
-            console.log(e.offsetX, e.offsetY);
         })
 
         window.addEventListener('pointerdown', e => {
             this.mousedown = true;
             this.mouse.x = e.offsetX;
             this.mouse.y = e.offsetY;
+            console.log(e.offsetX, e.offsetY);
         })
 
         window.addEventListener('pointerup', () => {
